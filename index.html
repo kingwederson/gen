@@ -70,39 +70,6 @@
                 photo: "" 
             },
             { 
-                id: 'rayane', 
-                pids: ['weverson'],
-                fid: 'tiaopinto',
-                mid: 'terezinhateixeira',
-                name: "Rayane Cristina de Oliveira", 
-                gender: "female", 
-                birthdate: "31 ago 2005", 
-                deathdate: "", 
-                photo: "" 
-            },
-            { 
-                id: 'terezinhateixeira', 
-                pids: ['tiaopinto'],
-                fid: null,
-                mid: null,
-                name: "Terezinha Teixeira de Oliveira", 
-                gender: "female", 
-                birthdate: "", 
-                deathdate: "", 
-                photo: "" 
-            },
-            { 
-                id: 'tiaopinto', 
-                pids: ['terezinhateixeira'],
-                fid: null,
-                mid: null,
-                name: "Sebastião Pinto", 
-                gender: "male", 
-                birthdate: "", 
-                deathdate: "", 
-                photo: "" 
-            },
-            { 
                 id: 'onofre', 
                 pids: ['maria'],
                 fid: 'joselandim',
@@ -475,7 +442,261 @@
                 birthdate: "sem data de nascimento", 
                 deathdate: "sem data de falescimento", 
                 photo: "foto/mariafrancisca.jpeg"
-            }/*,
+            },
+            { 
+                id: 'rayane', 
+                pids: ['weverson'],
+                fid: 'tiaopinto',
+                mid: 'terezinhateixeira',
+                name: "Rayane Cristina de Oliveira", 
+                gender: "female", 
+                birthdate: "31 ago 2005", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'terezinhateixeira', 
+                pids: ['tiaopinto'],
+                fid: 'manoelhonorio',
+                mid: 'raimundagloria',
+                name: "Terezinha de Fátima Teixeira <u>de Oliveira</u> Pinto",
+                gender: "female", 
+                birthdate: "12 jun 1967", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'tiaopinto', 
+                pids: ['terezinhateixeira'],
+                fid: 'durval',
+                mid: 'marieta',
+                name: "Sebastião Pinto", 
+                gender: "male", 
+                birthdate: "16 dez 1965", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'marieta', 
+                pids: ['durval'],
+                fid: 'placidio',
+                mid: 'ernestina',
+                name: "Marieta de Oliveira", 
+                gender: "female", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'durval', 
+                pids: ['marieta'],
+                fid: 'agripino',
+                mid: 'luziajudite',
+                name: "Durval Onofre Pinto", 
+                gender: "male", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'agripino', 
+                pids: ['luziajudite'],
+                fid: null,
+                mid: null,
+                name: "Agripino de Alves Pinto", 
+                gender: "male", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'luziajudite', 
+                pids: ['agripino'],
+                fid: null,
+                mid: null,
+                name: "Luiza Judite da Cunha", 
+                gender: "female", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'placidio', 
+                pids: ['ernestina'],
+                fid: null,
+                mid: null,
+                name: "Placidio Cândido de Oliveira", 
+                gender: "male", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'ernestina', 
+                pids: ['placidio'],
+                fid: null,
+                mid: null,
+                name: "Ernestina Amélia de Oliveira", 
+                gender: "female", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'manoelhonorio', 
+                pids: ['raimundagloria'], 
+                name: "Manoel Honório Teixeira",
+                fid: 'franciscohonorio',
+                mid: 'mariateixeirasobrinho',
+                gender: "male", 
+                birthdate: "09 dez 1937", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'raimundagloria', 
+                pids: ['manoelhonorio'], 
+                fid:'davidnunes',
+                mid:'marianaconceicao',
+                name: "Raimunda da Glória Teixeira", 
+                gender: "female", 
+                birthdate: "XX xxx 19XX", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'franciscohonorio',
+                pids: ['mariateixeirasobrinho'],
+                fid: 'josehonorio',
+                mid: 'floriana',
+                name: "Francisco Honório Machado", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'mariateixeirasobrinho',
+                pids: ['franciscohonorio'],
+                fid: 'joseteodoro',
+                mid: 'franciscainocencia',
+                name: "Maria Teixeira Sobrinho", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'marianaconceicao',
+                pids: ['davidnunes'],
+                fid: 'domingosbraz',
+                mid: 'mariaconceicao',
+                name: "Mariana Conceição de Jesus", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'davidnunes',
+                pids: ['marianaconceicao'],
+                fid: 'prudentejose',
+                mid: 'mariavitoria',
+                name: "David Nunes Neto", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'josehonorio',
+                pids: ['floriana'],
+                fid: null,
+                mid: null,
+                name: "José Honório Machado", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'floriana',
+                pids: ['josehonorio'],
+                fid: null,
+                mid: null,
+                name: "Floriana Arminda de Jesus", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'joseteodoro',
+                pids: ['franciscainocencia'],
+                fid: null,
+                mid: null,
+                name: "José Teodoro Teixeira", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'franciscainocencia',
+                pids: ['joseteodoro'],
+                fid: null,
+                mid: null,
+                name: "Francisca Inocência do Espírito Santo", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "",  // deixar em branco se ainda vivo
+                photo: "" 
+            },
+            { 
+                id: 'prudentejose', 
+                pids: ['mariavitoria'],
+                fid: null,
+                mid: null,
+                name: "Prudente José de Oliveira Neto", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            },
+            { 
+                id: 'mariavitoria', 
+                pids: ['prudentejose'],
+                fid: null,
+                mid: null,
+                name: "Maria Vitória de Jesus Neto", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            },
+            { 
+                id: 'domingosbraz', 
+                pids: ['mariaconceicao'],
+                fid: null,
+                mid: null,
+                name: "Domingos Braz da Fonseca", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            },
+            { 
+                id: 'mariaconceicao', 
+                pids: ['domingosbraz'],
+                fid: null,
+                mid: null,
+                name: "Maria Conceição de Jesus", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            }
+           /*,
             { 
                 id: 1, 
                 pids: [],
@@ -485,6 +706,39 @@
                 gender: "male", 
                 birthdate: "sem data de nascimento", 
                 deathdate: "sem data de falescimento", 
+                photo: "" 
+            }*//*,
+            { 
+                id: 'alessandra', 
+                pids: [],
+                fid: 'joaquimpaulo',
+                mid: 'joanadarc',
+                name: "Alessandra Aparecida de Almeida", 
+                gender: "female", 
+                birthdate: "05 mar 2001", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'joanadarc', 
+                pids: ['joaquimpaulo'],
+                fid: null,
+                mid: null,
+                name: "Joana D'Arc de Almeida", 
+                gender: "female", 
+                birthdate: "31 dez 1969", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'joaquimpaulo', 
+                pids: ['joanadarc'],
+                fid: null,
+                mid: null,
+                name: "Joaquim Paulo de Almeida", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "", 
                 photo: "" 
             }*/
         ] 
