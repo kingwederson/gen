@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genealogia</title>
+    <style>
+        div#tree{
+            width:100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <script src="familytree.js"></script>
+    <div id="tree"></div>
+    <script>
+    var tree = new FamilyTree(document.getElementById("tree"), {
+        nodeBinding: {
+            field_0: "name",
+            field_1: "birthdate",
+            field_2: "deathdate",
+            img_0: "photo"
+        },
+        nodes: [
+            { 
+                id: 'wederson', 
+                pids: [],
+                fid: 'gilmar',
+                mid: 'nilva',
+                name: "Wederson Geovane de Paula", 
+                gender: "male", 
+                birthdate: "04 mar 1993", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'gilmar', 
+                pids: ['nilva'],
+                fid: 'onofre',
+                mid: 'maria',
+                name: "Gilmar José de Paula", 
+                gender: "male", 
+                birthdate: "30 abr 1962", 
+                deathdate: "12 jan 2023", 
+                photo: "" 
+            },
+            { 
+                id: 'nilva', 
+                pids: ['gilmar'],
+                fid: 'felisberto',
+                mid: 'marlene',
+                name: "Nilva Maria de Paula", 
+                gender: "female", 
+                birthdate: "24 abr 1970", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'weverson', 
+                pids: ['rayane'],
+                fid: 'gilmar',
+                mid: 'nilva',
+                name: "Weverson Gilmar de Paula", 
+                gender: "male", 
+                birthdate: "04 out 1999", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'rayane', 
+                pids: ['weverson'],
+                fid: 'tiaopinto',
+                mid: 'terezinhateixeira',
+                name: "Rayane Cristina de Oliveira", 
+                gender: "female", 
+                birthdate: "31 ago 2005", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'terezinhateixeira', 
+                pids: ['tiaopinto'],
+                fid: null,
+                mid: null,
+                name: "Terezinha Teixeira de Oliveira", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'tiaopinto', 
+                pids: ['terezinhateixeira'],
+                fid: null,
+                mid: null,
+                name: "Sebastião Pinto", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'onofre', 
+                pids: ['maria'],
+                fid: 'joselandim',
+                mid: 'zaica',
+                name: "Onofre José Rodrigues", 
+                gender: "male", 
+                birthdate: "24 dez 1933", 
+                deathdate: "27 jan 2007", 
+                photo: "" 
+            },
+            { 
+                id: 'maria', 
+                pids: ['onofre'],
+                fid: 'xixico',
+                mid: 'anita',
+                name: "Maria Madalena de Paula Rodrigues", 
+                gender: "female", 
+                birthdate: "24 jan 1938", 
+                deathdate: "26 nov 2002", 
+                photo: "" 
+            },
+            { 
+                id: 'marlene', 
+                pids: ['felisberto', 'miguelzinho'],
+                //fid: 'xixico',
+                //mid: 'anita',
+                name: "Marlene Luzia de Paula", 
+                gender: "female", 
+                birthdate: "23 ago 1949", 
+                deathdate: "13 ago 2020", 
+                photo: "" 
+            },
+            { 
+                id: 'felisberto', 
+                pids: ['marlene'],
+                fid: null,
+                mid: null,
+                name: "Felisberto Rodrigues de Paula", 
+                gender: "male", 
+                birthdate: "22 jul 1945", 
+                deathdate: "3 mar 1973", 
+                photo: "" 
+            },
+            { 
+                id: 'joselandim', 
+                pids: ['zaica'],
+                fid: 'joaquimmanoel',
+                mid: 'franciscaconstantina',
+                name: "José da Silva Landim", 
+                gender: "male", 
+                birthdate: "1909", 
+                deathdate: "1889", 
+                photo: "" 
+            },
+            { 
+                id: 'zaica', 
+                pids: ['joselandim'],
+                fid: 'coco',
+                mid: 'cota',
+                name: "Rosalinda Amanda de Aquino", 
+                gender: "female", 
+                birthdate: "1911", 
+                deathdate: "17 jul 1998", 
+                photo: "" 
+            },
+            { 
+                id: 'wilson', 
+                pids: [],
+                fid: 'onofre',
+                mid: 'maria',
+                name: "Wilson Bento de Paula", 
+                gender: "male", 
+                birthdate: "21 mar 1970", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            },
+            { 
+                id: 'darley', 
+                pids: [],
+                fid: 'onofre',
+                mid: 'maria',
+                name: "Darley Francisco de Paula", 
+                gender: "male", 
+                birthdate: "19 fev 1966", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            },
+            { 
+                id: 'xixico', 
+                pids: ['anita'],
+                fid: null,
+                mid: null,
+                name: "Francisco Rodrigues de Paula", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "1991", 
+                photo: "" 
+            },
+            { 
+                id: 'anita', 
+                pids: ['xixico'],
+                fid: null,
+                mid: null,
+                name: "Jorvanita Aurora de Resende", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "ago 1998", 
+                photo: "" 
+            },
+            { 
+                id: 'coco', 
+                pids: ['cota'],
+                fid: null,
+                mid: null,
+                name: "Oscar Rodrigues de Paula", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'cota', 
+                pids: ['coco'],
+                fid: null,
+                mid: null,
+                name: "Amanda Rozina de Aquino", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'miguelzinho', 
+                pids: ['marlene'],
+                fid: null,
+                mid: null,
+                name: "Antônio Miguel de Paula", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "" 
+            },
+            { 
+                id: 'joaquimmanoel', 
+                pids: ['franciscaconstantina'],
+                fid: 'wenceslau',
+                mid: 'emerenciana',
+                name: "Joaquim Manoel de Almeida", 
+                gender: "male", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "foto/joaquimmanoel.jpeg" 
+            },
+            { 
+                id: 'franciscaconstantina', 
+                pids: ['joaquimmanoel'],
+                fid: null,
+                mid: null,
+                name: "Francisca Constantina de Carvalho", 
+                gender: "female", 
+                birthdate: "", 
+                deathdate: "", 
+                photo: "foto/franciscaconstantina.jpeg" 
+            },
+            { 
+                id: 'wenceslau', 
+                pids: ['emerenciana'],
+                fid: 'vicente',
+                mid: 'carlota',
+                name: "Wenceslau Antônio da Silva", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/wenceslau.jpeg" 
+            },
+            { 
+                id: 'emerenciana', 
+                pids: ['wenceslau'],
+                fid: 'manoelignacio',
+                mid: 'rosamaria',
+                name: "Maria Emerenciana de Almeida", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/emerenciana.jpeg"
+            },
+            { 
+                id: 'manoelignacio', 
+                pids: ['rosamaria'],
+                fid: 'manoeljsilva',
+                mid: 'ignaciarubina',
+                name: "Manoel Ignacio de Almeida", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/manoelignacio.jpeg"
+            },
+            { 
+                id: 'rosamaria', 
+                pids: ['manoelignacio'],
+                fid: null,
+                mid: null,
+                name: "Rosa Maria de Almeida", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/rosamaria.jpeg"
+            },
+            { 
+                id: 'manoeljsilva', 
+                pids: ['ignaciarubina'],
+                //fid: 'isabel',
+                //mid: 'manoel2',
+                name: "Manoel João da Silva", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/pedrompacheco.jpeg"
+            },
+            { 
+                id: 'ignaciarubina', 
+                pids: ['manoeljsilva'],
+                fid: null,
+                mid: null,
+                name: "Ignácia Rubina do Espírito Santo", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/annafelicia.jpeg"
+            },
+            { 
+                id: 'joaorodrigues', 
+                pids: ['antoniafrancisca'],
+                fid: null,
+                mid: null,
+                name: "Pedro Martins Pacheco", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/manoelmpacheco.jpeg"
+            },
+            { 
+                id: 'vicente', 
+                pids: ['carlota'],
+                fid: 'manoel3',
+                mid: 'ignacia',
+                name: "Vicente da Silva Landim", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/vicente.jpeg" 
+            },
+            { 
+                id: 'carlota', 
+                pids: ['vicente'],
+                fid: null,
+                mid: null,
+                name: "Carlota Porfíria da Silva", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/carlota.jpeg" 
+            },
+            { 
+                id: 'manoel3', 
+                pids: ['ignacia'],
+                fid: 'antoniofrancisco',
+                mid: 'quiteria',
+                name: "Manoel da Silva Landim", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/manuel3.jpg"
+            },
+            { 
+                id: 'ignacia', 
+                pids: ['manoel3'],
+                fid: null,
+                mid: null,
+                name: "Ignácia Maria de Almeida", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/ignacia.jpeg" 
+            },
+            { 
+                id: 'antoniofrancisco', 
+                pids: ['quiteria'],
+                fid: 'manoel2',
+                mid: 'isabel',
+                name: "Antônio Francisco da Silva", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/antoniofrancisco.jpeg"
+            },
+            { 
+                id: 'quiteria', 
+                pids: ['antoniofrancisco'],
+                fid: null,
+                mid: null,
+                name: "Quitéria Joaquina de Almeida", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/quiteria.jpeg"
+            },
+            { 
+                id: 'manoel2', 
+                pids: ['isabel'],
+                fid: 'manoel1',
+                mid: 'marialuz',
+                name: "Manoel Francisco da Silva", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/manoel2.jpeg"
+            },
+            { 
+                id: 'isabel', 
+                pids: ['manoel2'],
+                fid: 'joaorodrigues',
+                mid: 'antoniafrancisca',
+                name: "Isabel Francisca do Espírito Santo", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/isabel.jpeg"
+            },
+            { 
+                id: 'manoel1', 
+                pids: ['marialuz'],
+                fid: 'domingosjoao',
+                mid: 'mariafrancisca',
+                name: "Manoel Francisco da Silva", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/manoel1.jpeg"
+            },
+            { 
+                id: 'marialuz', 
+                pids: ['manoel1'],
+                fid: 'domingosluz',
+                mid: 'catharina',
+                name: "Maria Luz", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/marialuz.jpeg"
+            },
+            { 
+                id: 'domingosjoao', 
+                pids: ['mariafrancisca'],
+                fid: null,
+                mid: null,
+                name: "Domingos João", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/domingosjoao.jpeg"
+            },
+            { 
+                id: 'mariafrancisca', 
+                pids: ['domingosjoao'],
+                fid: null,
+                mid: null,
+                name: "Maria Francisca", 
+                gender: "female", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "foto/mariafrancisca.jpeg"
+            }/*,
+            { 
+                id: 1, 
+                pids: [],
+                fid: null,
+                mid: null,
+                name: "Nome da Pessoa", 
+                gender: "male", 
+                birthdate: "sem data de nascimento", 
+                deathdate: "sem data de falescimento", 
+                photo: "" 
+            }*/
+        ] 
+    });
+    // Focar no nó com ID específico após o carregamento
+    tree.on('init', function() {
+        tree.center('wederson'); // Substitua 'wederson' pelo ID do nó que deseja focar
+    });
+    </script>    
+</body>
+</html>
